@@ -121,14 +121,18 @@ Navigate to http://127.0.0.1:5000 to use the interface.
 
 - Add multilingual support in the UI for global accessibility.
 
-##✒️ Summary
+## ✒️ Summary
 
-Uses deep learning to detect pneumonia from chest X-rays.
+- Uses deep learning to detect pneumonia from chest X-rays.
 
-Addresses real-world challenges in early and accurate diagnosis.
+- Addresses real-world challenges in early and accurate diagnosis.
 
-Deployed via Flask for practical, easy-to-use web accessibility.
+- Deployed via Flask for practical, easy-to-use web accessibility.
 
-Supports healthcare workflows, especially in under-resourced regions.
+- Supports healthcare workflows, especially in under-resourced regions.
 
 ## CHALLENGES FACED
+
+- One major challenge was loading the dataset directly into Google Colab, as large folder structures can't be uploaded through the Colab interface.
+
+- To overcome this, the entire dataset was uploaded to Google Drive, and the Drive was then mounted in Colab using:
