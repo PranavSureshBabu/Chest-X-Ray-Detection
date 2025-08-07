@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chest X-Ray Classification</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</head>
+<body>
+    <h1>Chest X-Ray Classifier</h1>
+
+    <form action="/predict" method="post" enctype="multipart/form-data">
+        <input type="file" name="xray" onchange="previewImage(event)">
+        <input type="submit" value="Upload">
+    </form>
+
+    <img id="outputImage" style="display:none;" width="300">
+
+    {% if prediction %}
+        <h3>Prediction: {{ prediction }}</h3>
+        <img src="{{ image }}" width="300">
+    {% endif %}
+</body>
+</html>

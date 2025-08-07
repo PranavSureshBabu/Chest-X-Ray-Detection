@@ -1,0 +1,22 @@
+body {
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    color: #333;
+}
+
+input[type="file"], input[type="submit"] {
+    margin: 10px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+img {
+    margin-top: 20px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+}
